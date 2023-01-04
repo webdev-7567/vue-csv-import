@@ -270,7 +270,7 @@ export default {
 
             if (file) {
                 let reader = new FileReader();
-                reader.readAsText(file, "UTF-8");
+                reader.readAsText(file, "windows-1252");
                 reader.onload = function (evt) {
                     callback(evt.target.result);
                 };
